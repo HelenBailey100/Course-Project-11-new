@@ -12,6 +12,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
    }
    a {
     text-decoration: none;
@@ -19,6 +20,8 @@
    li {
     list-style: none;
    }
+
+
    /* navbar start */
 .navbar {
     display: flex;
@@ -27,11 +30,14 @@
     padding: 10px;
     background-color: rgb(181, 173, 157);
     color: rgb(0, 0, 0);
+    
    }
    .nav-links a {
     color: rgb(0, 0, 0);
     font-weight: 700;
+    
    }
+   
     .menu {
     display: flex;
     gap: 1em;
@@ -46,10 +52,11 @@
    .menu li {
     padding: 10px 10px;
    }
-     /* dropdown menu start */
+   /* dropdown menu start */
    .services {
-    position:relative;
+    position:relative; 
     }
+  
     .dropdown {
     background-color: rgb(181, 173, 157);
     margin-top: 10px;
@@ -68,79 +75,158 @@
     text-align: center;
     width: 100%;
    }
+
    .dropdown li:hover {
     background-color: rgb(255, 237, 220);
    }
    .services:hover .dropdown {
     display: block;
    }
-/* dropdown menu end */
-    /* navbar end */
+    /* dropdown menu end */
+/* navbar end */
+
+/*aligning frames start*/
+
+.frames_position {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  .frames::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*aligning frames end*/
+
 /*artist 1 start*/
+
 #artist1_frame {
-    position: relative;
-    left: 120px;
-    top: 80px;
-    width: 400px;
+   
+    display: flexbox;
+    width: 100%;
+    max-width: 400px;
     height: auto;
-    max-width: 100%;
+    margin-top: 50px;
+    margin-left: 150px;
+    
 }
+
 .a1_text {
-width: fit-content;
-font-size: xx-large;
-margin-left: 225px;
-margin-top: 80px;
-}
-.a1_text a {
-    color: black;
-}
-.a1_text a:hover {
-    color: rgba(255, 153, 0, 0.856);
-}
-/*artist 1 end*/
-/*artist 2 start*/
-#artist2_frame {
-    position: relative;
-    left: 650px;
-    top: -300px;
-    width: 550px;
-    height: auto;
-    max-width: 100%;
-}
-.a2_text {
-width: fit-content;
-font-size: xx-large;
-margin-left: 825px;
-margin-top: -300px;
-padding-bottom: 150px;
-}
-.a2_text a {
-    color: black;
-}
-.a2_text a:hover {
-    color: rgba(255, 153, 0, 0.856);
-}
-/*artist 2 end*/
-/*artist 3 start*/
-#artist3_frame {
-    position: relative;
-    left: 1350px;
-    top: -820px;
-    width:400px;
-    height: auto;
-    max-width: 100%;
-}
-.a3_text {
+
+    display: flexbox;
     width: fit-content;
     font-size: xx-large;
-    margin-left: 1450px;
-    margin-top: -820px;
-    padding-bottom: 120px;
+    
+    margin-top: 80px;
 }
+
+.a1_text a {
+
+    color: black;
+}
+
+.a1_text a:hover {
+
+    color: rgba(255, 153, 0, 0.856);
+}
+
+/*artist 1 end*/
+
+/*artist 2 start*/
+
+#artist2_frame {
+    
+    display: flexbox;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-top: 250px;
+    margin-left: 100px;
+
+    
+
+    
+}
+
+.a2_text {
+
+width: fit-content;
+font-size: xx-large;
+
+margin-top: 90px;
+
+
+}
+
+.a2_text a {
+
+    color: black;
+}
+
+.a2_text a:hover {
+
+    color: rgba(255, 153, 0, 0.856);
+}
+
+/*artist 2 end*/
+
+/*artist 3 start*/
+
+#artist3_frame {
+    
+    display: flexbox;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 150px;
+    float: right;
+
+
+        
+}
+
+.a3_text {
+   
+    width: fit-content;
+    font-size: xx-large;
+    margin-top: 90px;
+    
+    
+
+
+}
+
 .a3_text a {
     color: black;
 }
+
 .a3_text a:hover {
+
     color: rgba(255, 153, 0, 0.856);
 }
+
 /*artist 3 end*/
+
+/*footer start*/
+.footer{
+    display: flex;
+    position:relative;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
+    height:auto;
+    background-color: rgb(181, 173, 157);
+    color: rgb(0, 0, 0);
+    height: 4.5rem;
+    width:100%;
+}
+  .footer a {
+    margin-top: auto 0;
+    text-decoration: none;
+    size:100rem;
+  }
+/*footer end*/
