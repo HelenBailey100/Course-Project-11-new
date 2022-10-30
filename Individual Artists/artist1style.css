@@ -130,36 +130,7 @@
 /* dropdown menu/
 /*nav-bar end*/
 
-/*Buttons start*/
 
-/*.nav_buttons {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1300px;
-    margin-top: 100px;
-}
-
-.nav_buttons a {
-
-    color: black;
-}
-
-#backbutton, #forwardbutton {
-
-    display: inline;
-    font-size: x-large;
-    font-weight: bolder;
-    padding: 10px;
-    border-style: dashed;
-    background-color: rgb(196, 152, 58);
-   
-}
-
-
-
-/*Buttons end*/
 
 
 /*artist 1 start*/
