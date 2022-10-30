@@ -1,81 +1,123 @@
 /* UTILITIES */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-   body {
-    font-family: monospace;
-    background-color: rgb(181, 173, 157);
-    background-image:url(bg.png);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
-   /* navbar start */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+ }
+/* navbar start */
+
 .navbar {
-    display: flex;
-    align-items:center;
-    justify-content: space-evenly;
-    padding: 10px;
-    background-color: rgb(181, 173, 157);
-    color: rgb(0, 0, 0);
-   }
-   .nav-links a {
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-   }
-    .menu {
-    display: flex;
-    gap: 1em;
-    font-size: xx-large;
-   }
-   .menu li:hover {
-    background-color: rgb(255, 237, 220);
-    border-radius: 5px;
-    display: block;
-    transition: 0.3s ease;
-   }
-   .menu li {
-    padding: 10px 10px;
-   }
-     /* dropdown menu start */
-   .services {
-    position:relative;
-    }
-    .dropdown {
-    background-color: rgb(181, 173, 157);
-    margin-top: 10px;
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    border-radius: 8px;
-    font-size: 55%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
-    width: 100%;
-    display: none;
-   }
-   .dropdown li {
-    margin-top: 0px;
-    width:min-content;
-    text-align: center;
-    width: 100%;
-   }
-   .dropdown li:hover {
-    background-color: rgb(255, 237, 220);
-   }
-   .services:hover .dropdown {
-    display: block;
-   }
-/* dropdown menu end */
-    /* navbar end */
+  display: flex;
+  align-items:center;
+  height: 70px;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: rgb(181, 173, 157);
+  color: rgb(0, 0, 0);
+  position: relative; /*change*/
+  z-index: 100;/*change*/
+ }
+
+ .menu {
+ align-items:center;
+ }
+
+ .menu li{ /*added*/
+  display:flex;
+  margin-right: 100px;
+  justify-content:space-evenly;
+  text-align:center;
+  font-size:medium;
+ }
+
+
+ .nav-links a {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+ }
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: xx-large;
+ 
+ 
+ }
+ .menu li:hover {
+  background-color: rgb(255, 237, 220);
+  border-radius: 5px;
+  display: block;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 10px;
+  list-style: none;/*change*/
+  margin:auto;
+ }
+
+ .menu li a{ /*change*/
+  text-decoration:none;
+ }
+   /* dropdown menu start */
+ .services {
+  position:relative;
+  }
+  .dropdown {
+  background-color: rgb(181, 173, 157);
+  margin-top: 10px;
+  position:absolute; /*WITH RESPECT TO PARENT*/
+  border-radius: 8px;
+  font-size: 55%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:clip;
+  width: 150%;
+  display: none;/*change*/
+  margin-left:-10px;/*change*/
+  list-style: none;/*change*/
+  text-align: center;
+ }
+ 
+ .fa-fa-caret-down{
+  display:inline;
+ }
+
+ .dropdown li {
+  margin-top: 0px;
+  width:min-content;
+  text-align: center;
+  width:100%;
+  margin-left: -10px;/*change*/
+  font-size:small;
+ }
+ .dropdown li a{
+  text-decoration: none;
+
+ }
+
+ .dropdown li:hover {
+  background-color: rgb(255, 237, 220);
+ }
+
+ .services:hover .dropdown {
+  display: block;
+ }
+
+/* dropdown menu/
+/*nav-bar end*/
+
 
 /* Main Shopping Page start */
 
@@ -91,7 +133,7 @@
 	  padding: 25px;
 	  height: 400px;
 	  margin: 5px;
-	  background-color: rgb(181, 173, 157);
+	  background-color: #ECEFFC;
 	}
 
   

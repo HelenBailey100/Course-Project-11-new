@@ -4,14 +4,14 @@
     padding: 0;
     box-sizing: border-box;
    }
-   body {
-    font-family: monospace;
+   body {   
     background-color: rgb(181, 173, 157);
     background-image:url(bg.png);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
    }
    a {
     text-decoration: none;
@@ -19,23 +19,44 @@
    li {
     list-style: none;
    }
-   /* navbar start */
+
+
 .navbar {
     display: flex;
     align-items:center;
+    height: 70px;
     justify-content: space-evenly;
     padding: 10px;
     background-color: rgb(181, 173, 157);
     color: rgb(0, 0, 0);
+    position: relative; /*change*/
+    z-index: 100;/*change*/
    }
+ 
+   .menu {
+   align-items:center;
+   }
+
+   .menu li{ /*added*/
+    display:flex;
+    margin-right: 100px;
+    justify-content:space-evenly;
+    text-align:center;
+    font-size:medium;
+   }
+
+
    .nav-links a {
     color: rgb(0, 0, 0);
     font-weight: 700;
    }
-    .menu {
+
+  .menu {
     display: flex;
     gap: 1em;
     font-size: xx-large;
+   
+   
    }
    .menu li:hover {
     background-color: rgb(255, 237, 220);
@@ -44,7 +65,13 @@
     transition: 0.3s ease;
    }
    .menu li {
-    padding: 10px 10px;
+    padding: 10px;
+    list-style: none;/*change*/
+    margin:auto;
+   }
+
+   .menu li a{ /*change*/
+    text-decoration:none;
    }
      /* dropdown menu start */
    .services {
@@ -53,32 +80,54 @@
     .dropdown {
     background-color: rgb(181, 173, 157);
     margin-top: 10px;
-    position: absolute; /*WITH RESPECT TO PARENT*/
+    position:absolute; /*WITH RESPECT TO PARENT*/
     border-radius: 8px;
     font-size: 55%;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: clip;
-    width: 100%;
-    display: none;
+    text-overflow:clip;
+    width: 150%;
+    display: none;/*change*/
+    margin-left:-10px;/*change*/
+    list-style: none;/*change*/
+    text-align: center;
    }
+   
+   .fa-fa-caret-down{
+    display:inline;
+   }
+
    .dropdown li {
     margin-top: 0px;
     width:min-content;
     text-align: center;
-    width: 100%;
+    width:100%;
+    margin-left: -10px;/*change*/
+    font-size:small;
    }
+   .dropdown li a{
+    text-decoration: none;
+
+   }
+
    .dropdown li:hover {
     background-color: rgb(255, 237, 220);
    }
+
    .services:hover .dropdown {
     display: block;
    }
-/* dropdown menu end */
-    /* navbar end */
+/* dropdown menu/
+/*nav-bar end*/
 
 
 /* Cubism Header and text start */
+
+
+
+p {
+  font-size: larger;
+}
 
 .cubismblock {
   padding-top: 20px;
@@ -92,12 +141,12 @@
 }
 
 #CubismHeader {
-  margin-top: 40px; margin-bottom: 30px; margin-left: 40px; padding-left: 5%;
+  margin-top: 40px; margin-bottom: 30px; margin-left: 30px; padding-left: 5%;
   font-weight: bolder; color: #3B2042;
   }
   
 #CubismText {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: monospace
   font-weight: bolder;
   margin-left: 80px; margin-right: 80px;
   color: #3B2042
@@ -124,7 +173,7 @@
   }
   
 #SurrealismText {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: monospace
   font-weight: bolder;
   margin-left: 80px; margin-right: 80px;
   color: #3B2042
@@ -148,8 +197,7 @@
   }
   
 #PopartText {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bolder;
+  font-family: monospace;
   margin-left: 80px; margin-right: 80px;
   color: #3B2042
 }
@@ -185,6 +233,123 @@ h5 {
 
 /* linebreak end */
 
+/* javascript vote start */
+
+.bigwrapper{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.wrapper{
+  background: #59A48D;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+.wrapper header{
+  font-size: 22px;
+  font-weight: 600;
+}
+.wrapper .poll-area{
+  margin: 20px 0 15px 0;
+}
+.poll-area label{
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  border: 2px solid #e6e6e6;
+  transition: all 0.2s ease;
+}
+.poll-area label:hover{
+  border-color: #ddd;
+}
+label.selected{
+  border-color: #FF6F1E !important;
+}
+label .row{
+  display: flex;
+  pointer-events: none;
+  justify-content: space-between;
+}
+label .row .column{
+  display: flex;
+  align-items: center;
+}
+label .row .circle{
+  height: 19px;
+  width: 19px;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+label.selected .row .circle{
+  border-color: #FF6F1E;
+}
+label .row .circle::after{
+  content: "";
+  height: 11px;
+  width: 11px;
+  background: #FF6F1E;
+  border-radius: inherit;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  display: none;
+}
+.poll-area label:hover .row .circle::after{
+  display: block;
+  background: #e6e6e6;
+}
+label.selected .row .circle::after{
+  display: block;
+  background: #FF6F1E!important;
+}
+label .row span{
+  font-size: 16px;
+  font-weight: 500;
+}
+label .row .percent{
+  display: none;
+}
+label .progress{
+  height: 7px;
+  width: 100%;
+  position: relative;
+  background: #f0f0f0;
+  margin: 8px 0 3px 0;
+  border-radius: 30px;
+  display: none;
+  pointer-events: none;
+}
+label .progress:after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  background: #ccc;
+  width: calc(1% * var(--w));
+  border-radius: inherit;
+  transition: all 0.2s ease;
+}
+label.selected .progress::after{
+  background: #FF6F1E;
+}
+label.selectall .progress,
+label.selectall .row .percent{
+  display: block;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+/* javascript vote end */
 
 /*footer start*/
 .footer{
