@@ -142,7 +142,7 @@ h1{
   color: rgb(255, 237, 220)
 }
 
-/*carpusel*/
+/*carpusel start*/
 
 .carousel.slide{
   width:70%;
@@ -161,14 +161,9 @@ h1{
     height: 100%;
 
 }
-/*carousel*/
+/*carousel end*/
 
-/*Collection*/
-
-.collection{
-  height:50px;
-  width: 100%;
-}
+/*Collection start*/
 
 .collection-image{
 border-style:ridge; border-width: 15px;
@@ -177,14 +172,41 @@ width: 350px;
 margin:4vw;
 }
 
-.artist{
-  width:500px;
-  height:300px;
+/*Collection end*/
+
+/*Artist start*/
+
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
-.main.artist{
-  height: 180px;
-  width: 350px;
+.row{
+  display:block;
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.block-link-content{
+  text-align:center;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+img{
+  margin:0;
+  height:300px;
+  width:400px;
 }
 
 h2{
@@ -201,7 +223,7 @@ p{
   color: black;
   font-weight: normal;}
 
- .btn {
+.btn {
     position: relative;
     top: 50%;
     left: 50%;
@@ -214,7 +236,10 @@ p{
     border:#fff;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 2em;;
  }
+
+ /*Artist end*/
 
 /*footer start*/
 .footer{
