@@ -5,6 +5,7 @@
     box-sizing: border-box;
    }
    body {   
+    font-family: monospace;
     background-color: rgb(181, 173, 157);
     background-image:url(bg.png);
     height: 100%;

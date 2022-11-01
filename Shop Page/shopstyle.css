@@ -5,6 +5,7 @@
   box-sizing: border-box;
  }
  body {
+  font-family: monospace; 
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,6 +20,7 @@
 /* navbar start */
 
 .navbar {
+  font-family: monospace;
   display: flex;
   align-items:center;
   height: 70px;
@@ -136,12 +138,17 @@
 	  background-color: #ECEFFC;
 	}
 
-  
-    h2 {
-      font-size: medium; font-weight: 600  ;
+     h2 {
+      font-size: medium; font-weight: 800 ;
+      font-family: monospace;
     }
 
+    p {
+      font-family: monospace;
+    }
     .Shopintro {
+      background-color: rgb(181, 173, 157);
+      font-family: monospace;
       font-size:larger;
       font-weight: 500;
       margin-top: 80px;
@@ -149,9 +156,11 @@
       margin-left: 80px;
       margin-right: 80px;
       text-align: center;
+      padding: 15px;
     }
 
     .button {
+      font-family: monospace;
       --background: #59A48D;
       --text: #fff;
       --cart: #fff;

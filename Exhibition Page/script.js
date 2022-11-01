@@ -32,3 +32,8 @@ for (let i = 0; i < options.length; i++) {
     }
   });
 }
+
+
+$('.carousel').carouselparent1({
+  interval: 2000
+})
