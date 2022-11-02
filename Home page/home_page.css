@@ -1,5 +1,5 @@
 /* UTILITIES */
-* {
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +15,16 @@
    a {
     text-decoration: none;
    }
+   a{
+    color: rgb(255, 237, 220);
+    }
+a:link{
+  text-decoration:none;
+}
+  a:hover{
+    color:blue;
+  }
+   
    li {
     list-style: none;
    }
@@ -47,6 +57,7 @@
    .nav-links a {
     color: rgb(0, 0, 0);
     font-weight: 700;
+    color: rgb(255, 237, 220)
    }
 
   .menu {
@@ -61,6 +72,7 @@
     border-radius: 5px;
     display: block;
     transition: 0.3s ease;
+    background-color: rgb(84, 95, 81) ;
    }
    .menu li {
     padding: 10px;
@@ -102,14 +114,16 @@
     width:100%;
     margin-left: -15px;/*change*/
     font-size:small;
+    
    }
    .dropdown li a{
     text-decoration: none;
-
+    
    }
 
    .dropdown li:hover {
     background-color: rgb(255, 237, 220);
+    background-color: rgb(84, 95, 81) ;
    }
 
    .services:hover .dropdown {
@@ -175,6 +189,7 @@ div.collection{
 .carousel p{
   color:white;
 }
+
 /*carousel end*/
 
 /*Collection start*/
@@ -251,12 +266,11 @@ p{
   color:rgb(255, 237, 220)
 }
 
-.btn-outline-primary{
-  background-color: #fff;
-  border-color: #2672a1;
-  color: black;
-  font-weight: normal;
+.first{
+  text-align: center;
 }
+
+
 
 .btn {
     position: relative;
@@ -275,8 +289,9 @@ p{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 10px center;
+    cursor:pointer;
+}
 
- }
 
  /*Artist end*/
 
@@ -303,6 +318,14 @@ p{
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+
+.block-link-content:link{
+  cursor:pointer;
+  background-color: transparent;
+  text-decoration: none;
+  color:#fff;
+
 }
 
  /*Shop end*/
@@ -333,6 +356,11 @@ p{
     margin-top: auto 0;
     text-decoration: none;
     size:100rem;
+    color: rgb(255, 237, 220)
+  }
+
+  .footer a:hover{
+    background-color: rgb(84, 95, 81) ;
   }
 
 /*footer end*/

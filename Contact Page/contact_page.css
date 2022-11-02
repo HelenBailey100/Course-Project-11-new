@@ -48,6 +48,7 @@
    .nav-links a {
     color: rgb(0, 0, 0);
     font-weight: 700;
+    color: rgb(255, 237, 220)
    }
 
     .menu {
@@ -57,7 +58,7 @@
    
    }
    .menu li:hover {
-    background-color: rgb(255, 237, 220);
+    background-color: rgb(84, 95, 81) ;
     border-radius: 5px;
     display: block;
     transition: 0.3s ease;
@@ -101,6 +102,7 @@
     width:100%;
     margin-left: -10px;/*change*/
     font-size:small;
+   
    }
    .dropdown li a{
     text-decoration: none;
@@ -109,6 +111,7 @@
 
    .dropdown li:hover {
     background-color: rgb(255, 237, 220);
+    background-color: rgb(84, 95, 81) ;
    }
 
    .services:hover .dropdown {
@@ -167,16 +170,19 @@
   h1 {
     font-weight: 400;
     line-height: 1.2;
+    color: rgb(255, 237, 220)
   }
   
   p {
     font-size: 1.125rem;
+    color: rgb(255, 237, 220)
   }
   
   h1,
   p {
     margin-top: 0;
     margin-bottom: 0.5rem;
+    color: rgb(255, 237, 220)
   }
   
   label {
@@ -184,6 +190,7 @@
     align-items: center;
     font-size: 1.125rem;
     margin-bottom: 0.5rem;
+    color: rgb(255, 237, 220)
   }
   
   input,
@@ -220,6 +227,7 @@
   .header {
     padding: 0 0.625rem;
     margin-bottom: 1.875rem;
+    color: rgb(255, 237, 220)
   }
   
   .description {
@@ -231,6 +239,7 @@
     margin-left: 0.25rem;
     font-size: 0.9rem;
     color: black;
+    color: rgb(255, 237, 220)
   }
   
   .text-center {
@@ -290,14 +299,26 @@
   }
   
   .submit-button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    background: rgb(181, 173, 157);
-    color: inherit;
-    border-radius: 2px;
-    cursor: pointer;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color:rgb(181, 173, 157);
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border:#fff;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 2em;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      cursor:pointer;
   }
+
+  
 
 /*footer start*/
 .footer{
@@ -320,6 +341,11 @@
     margin-top: auto 0;
     text-decoration: none;
     size:100rem;
+    color: rgb(255, 237, 220)
+  }
+
+  .footer a:hover{
+    background-color: rgb(84, 95, 81) ;
   }
 
 /*footer end*/
